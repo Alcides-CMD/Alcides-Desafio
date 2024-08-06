@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-arg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Desafio-Alcides/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="/Desafio-Alcides/assets/Logo.png" alt="Logo de alura" class="logo">
+    </header>
+    <main>
+        <section class="section-texto">
+            
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
+            <div>
+                <h6 class="Informacion"> <img src="/Desafio-Alcides/assets/Exclamacion.png"> Solo letras minusculas y sin asentos</h6>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-densencriptar" onclick="botonDesencriptado()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section-texto-trans">
+            <textarea id="miid" class="mensaje" cols="20" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            <div>
+                <button class="copiar" id="copiar" onclick="botonCopiar()" disabled>Copiar</button>
+            </div>
+        </section>
+    </main>
+    <section>
+    <footer class="footer">
+        <p>Desarrollado por Brandan Alcides</p>
+    </footer>
+    </section>
+    <script src="/Desafio-Alcides/Encriptador.js"></script>
+</body>
+</html>

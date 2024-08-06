@@ -1,0 +1,276 @@
+*{
+    background: #f3f5fc;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 40px;
+    width: 120px;
+    height: 48px;
+    gap: 40px;
+    opacity: 0px;
+
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 50vh;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    gap: 183px;
+
+}
+
+.text-area{
+    border: none;
+    color: #0a3871;
+    margin-top: 98px;
+    text-transform: lowercase;
+}
+::placeholder {color: #0a3871; }
+    .text-area:focus{
+        outline: none;
+    }
+
+.Informacion{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    
+
+}
+
+
+.mensaje{
+    width: 400px;
+    height: 750px;
+    background: white;
+    background-image: url(/Desafio-Alcides/assets/Muñeco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 32px;
+    color: #0a3871;
+    margin-left: 115%;
+    margin-bottom: 40px;
+    padding-left: 28px;
+    
+    
+}
+#miid::placeholder {
+    color:#495057;
+    text-align: center;
+    padding-top: 560px;
+  }
+
+.mensaje:focus{
+    outline: none;
+}
+
+
+.botones{
+    display: flex;
+    justify-content: left;
+    width: 680px;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+    opacity: 0px;
+    
+
+}
+
+
+
+.boton-encriptar{
+    width:  328px;
+    height: 67px;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 24px;
+    background: #0A3871;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    color: #FFFFFF;
+
+
+
+
+}
+
+.boton-densencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px 0px 0px 0px;
+    gap: 8px;
+    border-radius: 24px;
+    opacity: 0px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    
+
+
+
+}
+
+
+
+.copiar{
+    width: 336px;
+    height: 67px;
+    margin-top: -140px;
+    margin-left: 550px;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color:#0A3871;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+
+    
+}
+.copiar:disabled {
+    display: none;
+}
+
+.footer{
+    
+    margin-top: 400px;
+    color: #0A3871;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    background-color: black;
+
+}
+
+
+@media (min-width: 320px) and (max-width: 768px){
+    main {
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 1%;
+    }
+
+    .mensaje {
+        margin-left: -10px;
+        height: 13rem;
+        width: 13rem;
+        background-image: none;
+    }
+
+    #miid::placeholder {
+        
+        padding-top: 290px;
+        margin-right: 25px;
+      }
+    
+
+    .botones {
+       justify-content: center;
+        flex-direction: column;
+        height: 200px;
+        
+    }
+
+    .copiar {
+        
+        margin-left: 1.5rem;
+    }
+
+    .footer {
+        margin-top: 900px;
+        margin-left: -5px;
+      
+    }
+    
+}
+
+
+
+@media (min-width: 770px) and (max-width: 1624px) {
+    .logo {
+        margin-left: 20px;
+        width: 100px;
+        height: 40px;
+        gap: 20px;
+    }
+
+    main {
+        
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+        margin-left: 40px;
+        gap: 90px;
+    }
+
+    .mensaje {
+        width: 300px;
+        height: 600px;
+        margin-right: 100px;
+        margin-left: calc((70vw - 770px) / 2); /* Ajuste progresivo del margen izquierdo */
+        margin-bottom: 20px;
+        padding-left: 14px;
+    }
+    #miid::placeholder {
+        
+        padding-top: 450px;
+      }
+
+    .botones {
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: 0;
+        gap: 12px;
+        position: relative;
+    }
+
+    .boton-encriptar,
+    .boton-desencriptar,
+    .copiar {
+        
+        padding: 12px;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .copiar {
+        
+        margin-left: calc((70vw - 770px) / 2);
+        margin-top: 20px;
+        position: relative;
+
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+}

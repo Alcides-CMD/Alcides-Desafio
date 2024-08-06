@@ -12,7 +12,6 @@ Este proyecto es un encriptador de texto diseñado para encriptar y desencriptar
 1. **Instalación:**
    - Clona este repositorio: `git clone https://github.com/tu-usuario/encriptador-de-texto.git`
    - Navega al directorio del proyecto: `cd encriptador-de-texto`
-   - Instala las dependencias necesarias: `npm install` (o el comando equivalente para tu gestor de paquetes)
 
 2. **Configuración:**
    - No se requiere configuración adicional para comenzar a usar el encriptador.
